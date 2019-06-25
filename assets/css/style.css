@@ -2,21 +2,32 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../images/matthew-t-rader-yJgNGkPTxnY-unsplash.jpg);
+    background-attachment: fixed;
+    background-position-x: 100% auto;
+    background-repeat: no-repeat;
+}
+
 .nav-bar {
-    background-color: rgb(29, 230, 146);
+    background-color: #0D0D0D;
+    padding: 0 16px;
 }
 
 .nav-header {
     display: inline;
     margin-left: 10%;
+    background-color: #404040;
+    height: 10vh;   
 }
 
 #logo {
     display: inline-block;
-    ;
+    padding: 9px;
     font-size: 22px;
     font-weight: bolder;
     letter-spacing: 3px;
+    color: #D9D9D9;
 }
 
 .nav-links {
@@ -29,26 +40,32 @@
     display: inline-block;
     padding: 14px 10px;
     text-decoration: none;
-    color: whitesmoke;
+    color: #D9D9D9;
     letter-spacing: 2px;
 }
 
 .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: rgba(217, 217, 217, 0.15);
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.03);
-    margin: 10% 10% 10% 10%;
+    background-color: rgba(217, 217, 217, 0.7);
+    margin: 10vh 10vw 10vh 10vw;
     padding: 0 0 12px;
+    border: 2px double #737373;
     width: auto;
-    height: 70%;
+    height: auto;
 }
 
 .container-header {
-    background-color: rgb(29, 230, 146); 
+    background-color: #404040; 
+    color: #D9D9D9;
 }
 
 .container-header h1 {
     margin-left: 15px;
+}
+
+.container-content {
+    margin: 5px 14px 0;
 }
