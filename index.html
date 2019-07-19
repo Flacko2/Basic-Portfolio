@@ -3,48 +3,73 @@
 
 <head>
     <title>Diego</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- I don't need this trash -->
+
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <div class="navbar nav-bar">
-        <div class="nav-header">
-            <div id="logo">
-                <h1>Diego Matthews</h1>
-            </div>
-        </div>
+
+    <nav>
+
+        <div class="logo">Diego Matthews</div>
+
         <div class="nav-links">
-
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact Me</a>
-
+            <ul>
+                <li id="links"><a href="#about">About</a></li>
+                <li id="links"><a href="#portfolio">Portfolio</a></li>
+                <li id="links"><a href="#contact">Contact</a></li>
+                <li id="links"><a href="#resume">Resume</a></li>
+            </ul>
         </div>
-        <!-- create element for small screen pop up -->
+
+        <!--To Do: toggle menu on and off -->
+        <!-- <div class="toggleMenu">
+            <span><i class="fa fa-arrow-left menu-arrow"></i></span>
+        </div> -->
+    </nav>
+
+    <div class="landing">
+
+        <div id="init-message">
+            <H1 id="init-header">Ready for the next big thing in UX/UI developement?</H1>
+            <h1 id="init-content">Begin exploring the realms of potential and possibilty.</h1>
+        </div>
+ 
+        <div class="floating-decoration">
+            <h1 id="ui-ux-dec">UI/UX Developer</h1>
+            <h1 id="future-dec">The Future begins here</h1>
+            <h1 id="css-dec">CSS3</h1>
+            <h1 id="html-dec">Html5</h1>
+        </div>
+
+
+
     </div>
 
-    <div class="container">
 
-        <div class="container-header">
-            <h1>About Me</h1>
-        </div>
 
-        <div class="container-content">
-            <img src="#" alt="#">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus omnis ab quisquam
-                perspiciatis iste ipsam ducimus veritatis debitis? At non veniam saepe eum natus dignissimos,
-                exercitationem ipsa id culpa.</p>
-            <h2>More stuff</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quam odio id molestias quis
-                inventore asperiores quo dolor dolore. Neque dolorem odit commodi voluptatum facilis temporibus
-                pariatur, amet dolores dolore.</p>
-        </div>
+    <div id="about">
 
     </div>
 
+
+    <!-- containers appear seamlessly  -->
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="assets/js/style.js"></script>
 </body>
 
 </html>
