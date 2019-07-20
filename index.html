@@ -20,52 +20,61 @@
 </head>
 
 <body>
+    <!-- uses for navbar tbd -->
 
-    <nav>
 
-        <div class="logo">Diego Matthews</div>
+    <!-- <div class="logo">Diego Matthews</div> -->
 
-        <div class="nav-links">
-            <ul>
-                <li id="links"><a href="#about">About</a></li>
-                <li id="links"><a href="#portfolio">Portfolio</a></li>
-                <li id="links"><a href="#contact">Contact</a></li>
-                <li id="links"><a href="#resume">Resume</a></li>
-            </ul>
-        </div>
+    <div class="nav-links">
+        <ul>
+            <li id="links"><a href="#home">Home</a></li>
+            <li id="links"><a href="#about">About</a></li>
+            <li id="links"><a href="#portfolio">Portfolio</a></li>
+            <li id="links"><a href="#contact">Contact</a></li>
+            <li id="links"><a href="#resume">Resume</a></li>
+        </ul>
+    </div>
 
-        <!--To Do: toggle menu on and off -->
-        <!-- <div class="toggleMenu">
+    <!--To Do: toggle menu on and off...maybe? -->
+    <!-- <div class="toggleMenu">
             <span><i class="fa fa-arrow-left menu-arrow"></i></span>
         </div> -->
-    </nav>
 
     <div class="landing">
 
         <div id="init-message">
+            
+            <h1 class="header">Welcome!</h1>
+            <!-- to do: make morphing transition between init-heading and init-content -->
             <H1 id="init-header">Ready for the next big thing in UX/UI developement?</H1>
-            <h1 id="init-content">Begin exploring the realms of potential and possibilty.</h1>
+            <h1 id="init-content">Begin exploring the realms of possibility and potential.</h1>
+
         </div>
- 
+
         <div class="floating-decoration">
-            <h1 id="ui-ux-dec">UI/UX Developer</h1>
-            <h1 id="future-dec">The Future begins here</h1>
-            <h1 id="css-dec">CSS3</h1>
-            <h1 id="html-dec">Html5</h1>
+
+            <div class="dec" id="spin">
+                <h1 id="ui-ux-dec"><span>UI</span><span id="slash">/</span><span>UX</span> Developer</h1>
+            </div>
+            <h1 class="dec" id="css-dec">CSS<span>3</span></h1>
+            <h1 class="dec" id="html-dec">Html<span>5</span></h1>
+            <button id="next-btn">See More</button>
+
         </div>
 
 
 
     </div>
 
-
-
+    <!-- different transitions for each? -->
+    <!-- grow from center of screen -->
+    <!-- slide overscreen -->
+    <!-- wobble on screen -->
+    <!-- bounce and squish other element -->
     <div id="about">
 
     </div>
 
-
-    <!-- containers appear seamlessly  -->
 
     <!-- Compiled and minified JavaScript -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
