@@ -15,53 +15,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
 </head>
 
 <body>
-    <!-- uses for navbar tbd -->
 
-
-    <!-- <div class="logo">Diego Matthews</div> -->
-
-    <div class="nav-links">
+    <nav class="home bounceInLeft">
         <ul>
-            <li id="links"><a href="#home">Home</a></li>
-            <li id="links"><a href="#about">About</a></li>
-            <li id="links"><a href="#portfolio">Portfolio</a></li>
-            <li id="links"><a href="#contact">Contact</a></li>
-            <li id="links"><a href="#resume">Resume</a></li>
+            <li><a class="links" href="#home">Home</a></li>
+            <li><a class="links" href="#bio">Biography</a></li>
+            <li><a class="links" href="#portfolio">Portfolio</a></li>
+            <li><a class="links" href="#contact">Contact</a></li>
+            <!-- <li><a class="links" href="#resume">Resume</a></li> -->
         </ul>
-    </div>
+    </nav>
 
-    <!--To Do: toggle menu on and off...maybe? -->
-    <!-- <div class="toggleMenu">
-            <span><i class="fa fa-arrow-left menu-arrow"></i></span>
-        </div> -->
-
-    <div class="landing">
+    <div id="home" class="active-page">
 
         <div id="init-message">
-            
-            <h1 class="header">Welcome!</h1>
-            <!-- to do: make morphing transition between init-heading and init-content -->
-            <H1 id="init-header">Ready for the next big thing in UX/UI developement?</H1>
-            <h1 id="init-content">Begin exploring the realms of possibility and potential.</h1>
 
+            <h1 id="header">Welcome!</h1>
+            <!-- wanna do something here? -->
+            <H1 id="">Ready for the next big thing in UX/UI developement?</H1>
+            <h1 id="">Begin exploring the realms of possibility and potential.</h1>
+            
+            <button id="next-btn" href="#bio">See More</button>
         </div>
 
-        <div class="floating-decoration">
+        <!-- to do: finish making background filler  -->
+        <!-- <div class="floating-decoration">
 
-            <div class="dec" id="spin">
-                <h1 id="ui-ux-dec"><span>UI</span><span id="slash">/</span><span>UX</span> Developer</h1>
-            </div>
+            <h1 class="dec" id="ui-ux-dec"><span>UI</span><span id="slash">/</span><span>UX</span> Developer</h1>
             <h1 class="dec" id="css-dec">CSS<span>3</span></h1>
             <h1 class="dec" id="html-dec">Html<span>5</span></h1>
-            <button id="next-btn">See More</button>
-
-        </div>
-
+            <h1 class="dec" id="design-dec">Design</h1>
+            
+        </div> -->
+        
 
 
     </div>
@@ -71,7 +62,10 @@
     <!-- slide overscreen -->
     <!-- wobble on screen -->
     <!-- bounce and squish other element -->
-    <div id="about">
+    <div id="bio">
+        <div class="bio-content">
+            <div class="bio-head"></div>
+        </div>
 
     </div>
 

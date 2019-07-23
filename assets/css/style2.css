@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #D9D8D7;
+    font-family: FrancoisOne;
+}
+
+/* custom fonts */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: BreeSerif;
+    src: url(../custom-fonts/Bree_Serif/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: ConcertOne;
+    src: url(../custom-fonts/Concert_One/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: PatuaOne;
+    src: url(../custom-fonts/Patua_One/PatuaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: FrancoisOne;
+    src: url(../custom-fonts/Francois_One/FrancoisOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Righteous;
+    src: url(../custom-fonts/Righteous/Righteous-Regular.ttf);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/* home page styling */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+nav.home {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    z-index: 100;
+    color: whitesmoke;
+    height: 65vh;
+    transition-delay: 0.25s;
+    transition: 2s;
+}
+
+nav.home ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav.home .links {
+    background: linear-gradient(270deg, #03BFAC 50%, #01163F);
+    background-size: 400%;
+    padding: 2px 8px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav.home .links:hover {
+    transition: 0.25s;
+    background-position-x: 100%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: #BAF2E2;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#home #init-message {
+    z-index: 100;
+    color: whitesmoke;
+    font-size: 32px;
+}
+
+#home #init-message #header {
+    position: absolute;
+    top: 18vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: #0A7F7F;
+    font-size: 42px;
+}
+
+#home .floating-decoration {
+    z-index: 10;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#home #ui-ux-dec {
+    position: absolute;
+    right: 8vw;
+    top: 8vh;
+    font-size: 42px;
+    color: rgb(3, 191, 191, 0.8);
+    transform: rotate(3deg);
+}
+
+#home #ui-ux-dec span {
+    color: #025E72;
+}
+
+#home #ui-ux-dec span#slash {
+    color: rgb(33, 236, 236);
+}
+
+#home #css-dec {
+    position: absolute;   
+}
+/* to do finish making background filler */
+
+#home #next-btn {
+    background-color: #03BFAC;
+    font-size: 28px;
+    font-weight: 600;
+    color: whitesmoke;
+    width: 20%;
+    margin-top: 5vh;
+    padding: 4px 9px;
+    border: none;
+    border-radius: 100px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/* for page viewablility */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+.hidden-page#home {
+    display: none;
+}
+
+.hidden-page#bio {
+    display: none;
+}
+
+.hidden-page#portfolio {
+    display: none;
+}
+
+.hidden-page#contact {
+    display: none;
+}

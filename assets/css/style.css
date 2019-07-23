@@ -5,10 +5,6 @@
     font-family: sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #D9D8D7;
     font-family: FrancoisOne;
@@ -145,12 +141,7 @@ nav .nav-links li a:active, nav .nav-links li a:visited {
     padding: 0;
 }
 
-.nav-links #links {
-    font-size: 18px;
-    text-align: center;
-}
-
-.nav-links #links a {
+.nav-links .links{
     /* background-color: rgb(3, 145, 130); */
     background: linear-gradient(270deg, #03BFAC 50%, #01163F);
     background-size: 400%;
@@ -161,7 +152,7 @@ nav .nav-links li a:active, nav .nav-links li a:visited {
     font-size: 24px;
 }
 
-.nav-links #links a:hover {
+.nav-links .links:hover {
     transition: 0.25s;
     background-position-x: 100%;
 
@@ -201,6 +192,15 @@ nav .toggleMenu .fa-arrow-left {
 .landing #init-message {
     color: whitesmoke;
     font-size: 32px;
+}
+
+.landing #header {
+    position: absolute;
+    top: 18vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: #0A7F7F;
+    font-size: 42px;
 }
 
 .landing .floating-decoration {
@@ -310,6 +310,14 @@ nav .toggleMenu .fa-arrow-left {
     border: none;
     border-radius: 100px;
 }
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* hides and shows page selected */
+
+.hidden-page {
+    display: none;
+}
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -340,3 +348,6 @@ nav .toggleMenu .fa-arrow-left {
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* for experimantational reasons */
+
