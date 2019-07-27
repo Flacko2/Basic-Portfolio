@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #D9D8D7;
+    /* background-color: rgb(110, 174, 185); */
     font-family: FrancoisOne;
+    opacity: .55;
 }
 
 /* custom fonts */
@@ -41,9 +42,15 @@ body {
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
-/* home page styling */
+/* select navbar styling */
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
+
+nav {
+    z-index: 100;
+}
+
+/* home */
 
 nav.home {
     position: absolute;
@@ -82,6 +89,56 @@ nav.home .links:hover {
     background-position-x: 100%;
 }
 
+/* bio */
+
+nav.bio {
+    position: absolute;
+    top: 9vh;
+    left: 9vw;
+    width: 100vw;
+}
+
+nav.bio ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+}
+
+nav.bio li {
+    padding: 2px 0px 12px 12px;
+    /* background-color: rgb(80, 31, 133); */
+    background-color: #637E50;
+    overflow: hidden;
+}
+
+nav.bio li:hover {
+    transition: .25s cubic-bezier(.65,.35,.14,.94);
+    transform: scale(1.1);
+}
+
+nav.bio .links {
+    background: linear-gradient(120deg, #637E50 45%, rgb(72, 3, 104), rgb(72, 3, 104));
+    background-size: 300%;
+    background-position-x: 0;
+    transition: .35s;
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 4px 4px 2px 4px;
+}
+
+nav.bio .links:hover {
+    transition: .35s;
+    background-position-x: 100%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/* home page */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
 #home {
     display: flex;
     flex-direction: column;
@@ -104,7 +161,7 @@ nav.home .links:hover {
 
 #home #init-message #header {
     position: absolute;
-    top: 18vh;
+    top: 13vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     color: #0A7F7F;
@@ -135,8 +192,9 @@ nav.home .links:hover {
 }
 
 #home #css-dec {
-    position: absolute;   
+    position: absolute;
 }
+
 /* to do finish making background filler */
 
 #home #next-btn {
@@ -150,24 +208,99 @@ nav.home .links:hover {
     border: none;
     border-radius: 100px;
 }
+
+#home #next-btn:hover {
+    background-color: rgb(3, 151, 136);
+}
+
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
-/* for page viewablility */
+/* Bio page */
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    /* background-color: #E9F2A7; */
+    background-color: #C3FF9C;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#bio .bio-content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    /* background-color: rgba(108, 129, 89, 0.336); */
+    background-color: #77CC3F;
+    width: 85vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+}
+
+#bio .bio-content #bio-header {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #637E50;
+    /* color: #60A51C; */
+    color: rgb(240, 255, 230);
+    font-size: 45px;
+    padding: 4px 6px 4px 4px;
+    box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.233);
+}
+
+#bio #next-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 15%;
+    height: 8%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/* for page's viewable elements */
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
 .hidden-page#home {
-    display: none;
+    transition: .5s;
+    opacity: 0;
 }
 
 .hidden-page#bio {
-    display: none;
+    transition: .75s;
+    opacity: 0;
+}
+
+.active-page#bio {
+    transition: .5s;
+    opacity: 1;
 }
 
 .hidden-page#portfolio {
     display: none;
+    transition-delay: 1s;
+    transition: 2s;
 }
 
 .hidden-page#contact {
     display: none;
+    transition-delay: 1s;
+    transition: 2s;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* for potential transitions between elements. */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
