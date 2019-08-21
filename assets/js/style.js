@@ -4,7 +4,7 @@ $(window).on("load", function () {
     console.log("window ready");
     $("body").css({
         opacity: "1",
-        transition: "800ms"
+        transition: "200ms"
     });
 });
 
